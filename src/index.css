@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #122d1a;
+  --color-primary-container: #28432f;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #91af96;
+  --color-primary-fixed: #cbebce;
+  --color-primary-fixed-dim: #afceb3;
+  --color-on-primary-fixed: #05200f;
+  --color-on-primary-fixed-variant: #324d38;
+
+  --color-secondary: #7d5712;
+  --color-secondary-container: #fdc97a;
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #78530d;
+  --color-secondary-fixed: #ffddaf;
+  --color-secondary-fixed-dim: #f1be71;
+  --color-on-secondary-fixed: #281800;
+  --color-on-secondary-fixed-variant: #614000;
+
+  --color-tertiary: #1e2b00;
+  --color-tertiary-container: #334213;
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #9daf74;
+  --color-tertiary-fixed: #d7eaaa;
+  --color-tertiary-fixed-dim: #bbce90;
+  --color-on-tertiary-fixed: #141f00;
+  --color-on-tertiary-fixed-variant: #3d4c1c;
+
+  --color-surface: #fbf9f4;
+  --color-surface-dim: #dbdad5;
+  --color-surface-bright: #fbf9f4;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f5f3ee;
+  --color-surface-container: #f0eee9;
+  --color-surface-container-high: #eae8e3;
+  --color-surface-container-highest: #e4e2dd;
+  --color-surface-variant: #e4e2dd;
+  --color-on-surface: #1b1c19;
+  --color-on-surface-variant: #424842;
+  --color-inverse-surface: #30312e;
+  --color-inverse-on-surface: #f2f1ec;
+  --color-outline: #737972;
+  --color-outline-variant: #c2c8c0;
+  --color-background: #fbf9f4;
+  --color-on-background: #1b1c19;
+
+  --font-serif: "EB Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Prompt", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-headline-lg: "EB Garamond", serif;
+  --font-headline-md: "EB Garamond", serif;
+  --font-headline-sm: "EB Garamond", serif;
+  --font-display-hero: "EB Garamond", serif;
+  --font-display-hero-mobile: "EB Garamond", serif;
+  --font-kpi-stat: "EB Garamond", serif;
+  --font-lead: "Plus Jakarta Sans", "Prompt", sans-serif;
+  --font-body-lg: "Plus Jakarta Sans", "Prompt", sans-serif;
+  --font-body-sm: "Plus Jakarta Sans", "Prompt", sans-serif;
+  --font-label-caps: "Plus Jakarta Sans", "Prompt", sans-serif;
+  --font-label-sm: "Plus Jakarta Sans", "Prompt", sans-serif;
+}
+
+@layer utilities {
+  .font-headline-lg {
+    font-family: var(--font-headline-lg);
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.015em;
+    font-weight: 500;
+  }
+  .font-headline-md {
+    font-family: var(--font-headline-md);
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 600;
+  }
+  .font-headline-sm {
+    font-family: var(--font-headline-sm);
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+  .font-lead {
+    font-family: var(--font-lead);
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+  }
+  .font-kpi-stat {
+    font-family: var(--font-kpi-stat);
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+  .font-body-lg {
+    font-family: var(--font-body-lg);
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .font-body-sm {
+    font-family: var(--font-body-sm);
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .font-label-caps {
+    font-family: var(--font-label-caps);
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.12em;
+    font-weight: 700;
+  }
+  .font-label-sm {
+    font-family: var(--font-label-sm);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    font-weight: 600;
+  }
+}
+
+/* Material Symbols configuration */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
